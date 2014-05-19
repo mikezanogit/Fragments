@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.fragments.app.MainActivity">
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:name="com.example.fragments.app.Titles"
+        android:id="@+id/titlesFragment"
+        android:layout_weight="1" />
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:name="com.example.fragments.app.Description"
+        android:id="@+id/descriptionFragment"
+        android:layout_weight="1" />
+
+</LinearLayout>
